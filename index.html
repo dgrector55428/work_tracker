@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IE Work Tracker</title>
+    <link rel="stylesheet" href="./vendors/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-9ZfPnbegQSumzaE7mks2IYgHoayLtuto3AS6ieArECeaR8nCfliJVuLh/GaQ1gyM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark mb-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="fad fa-laptop-code header-icon"></i>
+          IE Work Tracker
+        </a>
+      </div>
+    </nav>
+    <div class="d-flex justify-content-center appTitleWrapper">
+      <h1 class="mb-5">2021 Inside Edge Work Tracker</h1>
+    </div>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-sm-12">
+          <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea class="form-control" id="description" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="ticketNumber" class="form-label">Ticket #</label>
+            <input
+              type="text"
+              class="form-control"
+              id="ticketNumber"
+              placeholder="IT-13326"
+            />
+          </div>
+          <div class="mb-3">
+            <button type="submit" class="btn btn-primary mb-3">Submit</button>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- <script src="./vendors/bootstrap/bootstrap.bundle.min.js"></script> -->
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
